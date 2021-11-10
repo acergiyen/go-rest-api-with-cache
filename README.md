@@ -1,15 +1,15 @@
 # gorestapi
-In Memory Key-Value store olarak çalışan REST API projesidir.
+It is a REST API project that works as an In Memory Key-Value store.
 
-Proje içerisinde memory-cache mekanizması mevcuttur.
+There is a memory-cache mechanism in the project.
 
-Bir request Handle olduğu taktirde server log tutularak gelen istekler bir log dosyasına kayıt edilmekte.
+In case of a request Handle, server logs are kept and incoming requests are recorded in a log file.
 
-Uygulama çalışma süresince belirlenen süre içerisinde(3600s) memory içerisindeki dosyaları "TIMESTAMP-data.gob" dosyasına kayıt eder.
+The application saves the files in the memory to the "TIMESTAMP-data.gob" file within the specified time (3600s) during operation.
 
-Proje local ortamda test edilmesi isteniyorsa local ortamda ilgili port belirlenmeli veya default olarak "localhost/" domaini kullanılarak istek atılmalıdır.
+If the project is desired to be tested in the local environment, the relevant port should be determined in the local environment or the request should be made using the "localhost/" domain by default.
 
-Heroku üzerine deploy edilmiştir.
+Deployed on Heroku.
 
 https://go-rest-api-with-cache.herokuapp.com/
 
@@ -29,17 +29,17 @@ https://go-rest-api-with-cache.herokuapp.com/
 
 https://go-rest-api-with-cache.herokuapp.com/api/set
 - ### **GET** 
- In-Memory cache içerisindeki tüm dataları getirir.
+Retrieves all data in the In-Memory cache.
 
 
 - ### **GET/{Key}**  
 
-Parametre olarak gönderilen key var ise geri getirir.
+If there is a key sent as a parameter, it returns it.
 
 https://go-rest-api-with-cache.herokuapp.com/api/get/{key}
 - ### **FLUSH**  
 
-In-Memory içerisindeki tüm cache i boşaltır. TIMESTAMP-data.gob dosyasını temizler.
+Empties all cache in In-Memory. Clears the TIMESTAMP-data.gob file.
 
 https://go-rest-api-with-cache.herokuapp.com/api/flush
 
