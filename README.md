@@ -7,6 +7,8 @@ Bir request Handle olduğu taktirde server log tutularak gelen istekler bir log 
 
 Uygulama çalışma süresince belirlenen süre içerisinde(3600s) memory içerisindeki dosyaları "TIMESTAMP-data.gob" dosyasına kayıt eder.
 
+Proje local ortamda test edilmesi isteniyorsa local ortamda ilgili port belirlenmeli veya default olarak "localhost/" domaini kullanılarak istek atılmalıdır.
+
 Heroku üzerine deploy edilmiştir.
 
 https://go-rest-api-with-cache.herokuapp.com/
