@@ -3,11 +3,8 @@
 It is an api project based on the steps of an e-commerce site in the basket.
 
 ## Endpoints 
- 
-### **/api/v1/basket** 
-
 **POST**
-   Json/Body
+### **/api/v1/basket** 
    
 ```javascript
 {
@@ -23,8 +20,9 @@ It is an api project based on the steps of an e-commerce site in the basket.
   ]
 }
 ```
+**GET**
 - ### **api/v1/basket/{basketId}** 
 
-**GET**
+
 
 
